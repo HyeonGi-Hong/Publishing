@@ -1,0 +1,57 @@
+body{
+     margin : 0;
+}
+.firstDiv{
+     margin-top: 100px;
+     margin-right: 100px;
+     margin-bottom: 100px;
+     margin-left: 100px;
+     background-color: #555;
+}
+.firstDiv article{
+     background-color: #039; color: white;
+}
+.secondDiv{
+     background-color: #ddd;
+     margin: 20px 25px;
+     /*  ! firstDiv의 margin-bottom: 10ox 상쇄 
+         ? secondDiv의 margin과 만나는 부분에서 가산없이 병함. 
+     */
+         
+     padding: 0 10px 10px;
+}
+.secondDiv article{
+     background-color: #930;
+     /* margin: 10px; */
+     /* 
+      ? margin-bottom 비적용 됨. 부모요소가 자손요소에게 padding을 사용함이 바람직.
+     */
+}
+.centerDiv{
+     width: 300px; background-color: violet;
+     margin: 0 auto;
+     padding: 10px;
+     border: 5px solid #33f;
+     /* 
+     ? auto
+     ! (parent(width) - child(width)) / 2.
+     */
+}
+
+.centerDiv article{
+     margin: 0 10px;
+     /* ! margin */
+     background-color: turquoise;
+     color: white;
+}
+.paddingDiv{
+     padding: 10px 20px; border: 3px solid #333; background-color: #ff3;
+     width: 100px; box-sizing: border-box;
+     /* 
+     ! box-sizing: border-box; 를 설정하면 padding 및 border의 사이즈는 더이상 
+     ? box-sizing
+      */
+}
+.paddingDiv article{
+     background-color: #039; color: white;
+}

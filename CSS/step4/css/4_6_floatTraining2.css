@@ -1,0 +1,52 @@
+/* body{
+     margin: 0;
+}
+
+ul{
+     margin: 0; padding: 0; 
+}
+
+ul li{
+     list-style: none; width: 16.66%;
+}
+
+ul li figure:after{
+     content: ''; display: block; clear: both;
+}
+
+ul li figure{
+     float: left; padding: 0; margin: 0;
+}
+
+ul li figure figcaption dl{
+     background-color: yellow;
+}
+
+ul li figure{
+     border: 1px solid #555;
+}
+
+dl{
+     margin: 0;
+} */
+
+*{
+     margin: 0; padding: 0;
+}
+
+ul li{
+     width: 16.66%; float: left; display: block; border: 1px solid black;
+     box-sizing: border-box;
+}
+
+ul li figure img{
+     width: 100%; display: block;
+}
+
+ul li dl{
+     text-align: center; background-color: yellow;
+}
+
+ul:after{
+     content: ''; display: block; clear: both;
+}
